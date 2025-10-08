@@ -1,0 +1,76 @@
+"use client";
+import Image from "next/image";
+import React from "react";
+
+export default function Page15() {
+  return (
+    <section className="w-full relative z-20 flex flex-col items-center py-16 px-6 group">
+
+      {/* === Background Image Layer 2 (deepest) === */}
+            <div className="absolute inset-0 z-0">
+              <Image
+                src="/images/page3lineImg.png"
+                alt="Deep Background"
+                fill
+                className="object-contain md:translate-x-150.5 translate-x-126 -translate-y-1 opacity-100"
+                priority
+              />
+            </div>
+      {/* Heading */}
+      <h2 className="text-2xl md:text-3xl font-semibold text-[#545454] mb-8 text-center">
+        Cost Of Studying In Australia
+      </h2>
+
+      {/* Scholarships Card */}
+      <div className="relative bg-white shadow-md rounded-xl px-18 py-4 mb-10">
+        <span className="absolute left-4 top-1/2 transform -translate-y-8 text-[#37D7D9] text-2xl">★</span>
+        <p className="text-center font-semibold text-[#000000]">Scholarships</p>
+        <p className="text-center text-[#000000] text-sm">
+          Offered By Australian Government & Universities
+        </p>
+      </div>
+
+      {/* Tuition Fees */}
+      <div className="relative w-full max-w-4xl overflow-hidden rounded-2xl mb-6">
+        {/* Horizontal Fill effect */}
+        <div className="absolute inset-0 bg-[#37D7D9]/40 scale-x-0 origin-left group-hover:scale-x-30 transition-transform duration-1200 ease-in-out rounded-br-2xl rounded-tr-2xl"></div>
+
+        {/* Content */}
+        <div className="relative border-3 border-[#37D7D9] rounded-2xl px-6 py-6 flex justify-between items-center">
+          <p className="font-medium text-lg text-[#000000]">Tuition Fees</p>
+          <p className="text-[#000000] text-md text-right">
+            AUD $20,000 – $45,000/Year (Depending On Course)
+          </p>
+        </div>
+      </div>
+
+      {/* Living Costs */}
+      <div className="relative w-full max-w-4xl overflow-hidden rounded-2xl mb-6">
+        <div className="absolute inset-0 bg-[#37D7D9]/40 scale-x-0 origin-left group-hover:scale-x-70 transition-transform duration-1200 ease-in-out rounded-br-2xl rounded-tr-2xl"></div>
+        <div className="relative border-3 border-[#37D7D9] rounded-2xl px-6 py-6 flex justify-between items-center">
+          <p className="font-medium text-lg text-[#000000]">Living Costs</p>
+          <p className="text-[#000000] text-md text-right">
+            AUD $1,500 – $2,200/Month
+          </p>
+        </div>
+      </div>
+
+      {/* Visa Fees */}
+      <div className="relative w-full max-w-4xl overflow-hidden rounded-2xl mb-10">
+        <div className="absolute inset-0 bg-[#37D7D9]/40 scale-x-0 origin-left group-hover:scale-x-40 transition-transform duration-1200 ease-in-out rounded-br-2xl rounded-tr-2xl"></div>
+        <div className="relative border-3 border-[#37D7D9] rounded-2xl px-6 py-6 flex justify-between items-center">
+          <p className="font-medium text-lg text-[#000000]">Visa Fees</p>
+          <p className="text-[#000000] text-md text-right">$620</p>
+        </div>
+      </div>
+
+      {/* Total */}
+      <div className="text-center">
+        <p className="text-[#000000] font-semibold text-xl">Total</p>
+        <p className="text-lg md:text-xl font-bold text-[#000000] bg-white shadow-md shadow-[#CFF5F6] rounded-2xl px-12 py-4">
+          AUD $39,000 – 72,700
+        </p>
+      </div>
+    </section>
+  );
+}
