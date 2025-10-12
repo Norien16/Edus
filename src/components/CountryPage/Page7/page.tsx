@@ -42,7 +42,7 @@ export default function Page7() {
           src="/images/page6lineImg.png" // <-- replace with your farthest background image
           alt="Deep2 Background"
           fill
-          className="object-contain translate-x-149 translate-y-1138 opacity-100" // lower opacity to blend
+          className="object-contain translate-x-151.5 translate-y-1170 opacity-100" // lower opacity to blend
           priority
         />
       </div>

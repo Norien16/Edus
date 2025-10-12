@@ -20,7 +20,7 @@ export default function Page6() {
           src="/images/page6lineImg.png"
           alt="Deep2 Background"
           fill
-          className="object-contain translate-x-20 sm:translate-x-60 md:translate-x-150 translate-y-0 sm:-translate-y-10 md:-translate-y-40 opacity-100"
+          className="object-contain translate-x-20 sm:translate-x-60 md:translate-x-152.5 translate-y-0 sm:-translate-y-10 md:-translate-y-40 opacity-100"
           priority
         />
       </div>

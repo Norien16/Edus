@@ -4,14 +4,14 @@ import Image from "next/image";
 
 export default function Page5() {
   return (
-    <section className="relative w-full py-20 md:py-30 -mt-20 md:-mt-40 bg-white">
+    <section className="relative w-full py-20 md:py-30 -mt-20 md:-mt-36 bg-white">
       {/* === Background Image Layer 1 === */}
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/page5line2Img.png"
           alt="Deep Background"
           fill
-          className="object-contain translate-x-22 md:translate-x-150 -translate-y-0 md:-translate-y-0 opacity-100"
+          className="object-contain translate-x-22 md:translate-x-152.5 -translate-y-0 md:-translate-y-0 opacity-100"
           priority
         />
       </div>
@@ -51,7 +51,7 @@ export default function Page5() {
         </div>
 
         {/* === SOP === */}
-        <div className="absolute top-[240px] md:top-[350px] right-6 md:right-[70px] flex items-center gap-2 md:gap-3">
+        <div className="absolute top-[240px] md:top-[350px] right-6 md:right-[110px] flex items-center gap-2 md:gap-3">
           <Image src="/images/page4dotImg.png" alt="Dot" width={36} height={36} className="md:w-[44px] md:h-[44px]" />
           <p className="text-lg md:text-xl text-[#000000] max-w-[220px] md:max-w-xs" style={{ fontFamily: "DM Sans" }}>
             Statement Of Purpose (SOP)
@@ -67,7 +67,7 @@ export default function Page5() {
         </div>
 
         {/* === Valid Passport === */}
-        <div className="absolute -bottom-40 md:-bottom-54 right-[100px] md:right-[185px] flex items-center gap-2 md:gap-3">
+        <div className="absolute -bottom-40 md:-bottom-52 right-[100px] md:right-[205px] flex items-center gap-2 md:gap-3">
           <Image src="/images/page4dotImg.png" alt="Dot" width={36} height={36} className="md:w-[44px] md:h-[44px]" />
           <p className="text-lg md:text-xl text-[#000000]" style={{ fontFamily: "DM Sans" }}>
             Valid Passport

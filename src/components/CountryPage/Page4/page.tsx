@@ -4,14 +4,14 @@ import Image from "next/image";
 
 export default function Page4() {
   return (
-    <section className="relative w-full py-20 sm:py-24 md:py-30 mt-5 bg-white">
+    <section className="relative w-full py-20 sm:py-24 md:py-30 mt-6 bg-white">
       {/* === Background Image Layer 2 (deepest) === */}
       <div className="absolute inset-0 z-0 h-[500px] sm:h-[650px] md:h-[750px]">
         <Image
           src="/images/page4line2Img.png"
           alt="Deep Background"
           fill
-          className="object-contain translate-x-466 md:translate-x-490 lg:translate-x-[601px] -translate-y-6 opacity-100"
+          className="object-contain translate-x-466 md:translate-x-490 lg:translate-x-[612px] -translate-y-6 opacity-100"
           priority
         />
       </div>

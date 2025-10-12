@@ -8,7 +8,7 @@ export default function About4() {
       {/* Background Wave */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/about4backImg.png"
+          src="/images/about4waveImg.png"
           alt="Background Wave"
           fill
           className="object-contain"
@@ -31,7 +31,7 @@ export default function About4() {
       {/* Foreground Content */}
       <div className="container relative z-20 mx-auto px-4 py-40 text-center">
         {/* Heading */}
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 -translate-x-80 pb-30">
+        <h2 className=" md:text-3xl font-bold text-gray-900 -translate-x-80 pb-30">
           Your Global Career, Now In Your
           <br /> Pocket —Edulinks AI On Mobile!
         </h2>
@@ -43,14 +43,14 @@ export default function About4() {
             alt="Google Play"
             width={120}
             height={45}
-            className="w-[120px] sm:w-[140px] md:w-[140px] h-auto"
+            className="w-[140px] h-auto"
           />
           <Image
             src="/images/appImg.png"
             alt="App Store"
             width={120}
             height={45}
-            className="w-[120px] sm:w-[140px] md:w-[140px] h-auto"
+            className="w-[140px] h-auto"
           />
         </div>
 
@@ -63,14 +63,14 @@ export default function About4() {
               alt="Career Pathway Test"
               width={400}
               height={150}
-              className="w-[280px] sm:w-[340px] md:w-[400px] h-auto drop-shadow-xl -translate-y-30 -translate-x-21"
+              className="w-[400px] h-auto drop-shadow-xl -translate-y-30 -translate-x-21"
             />
             <Image
               src="/images/aboutcard2Img.png"
               alt="University Course Shortlisting"
               width={400}
               height={150}
-              className="w-[280px] sm:w-[340px] md:w-[400px] h-auto drop-shadow-xl -translate-y-47 translate-x-18"
+              className="w-[400px] h-auto drop-shadow-xl -translate-y-47 translate-x-18"
             />
           </div>
 
@@ -80,7 +80,7 @@ export default function About4() {
             alt="Mobile App Preview"
             width={400}
             height={400}
-            className="w-[260px] sm:w-[320px] md:w-[400px] h-auto relative z-10 -translate-y-40"
+            className="w-[400px] h-auto relative z-10 -translate-y-40"
           />
 
           {/* Cards Right */}
@@ -90,14 +90,14 @@ export default function About4() {
               alt="Visa Query Solver"
               width={400}
               height={150}
-              className="w-[280px] sm:w-[340px] md:w-[400px] h-auto drop-shadow-xl -translate-y-20 -translate-x-16 relative z-20"
+              className="w-[400px] h-auto drop-shadow-xl -translate-y-20 -translate-x-16 relative z-20"
             />
             <Image
               src="/images/aboutcard4Img.png"
               alt="Chat With Me"
               width={400}
               height={150}
-              className="w-[280px] sm:w-[340px] md:w-[400px] h-auto drop-shadow-xl -translate-y-36 translate-x-10 relative z-10"
+              className="w-[400px] h-auto drop-shadow-xl -translate-y-36 translate-x-10 relative z-10"
             />
           </div>
         </div>

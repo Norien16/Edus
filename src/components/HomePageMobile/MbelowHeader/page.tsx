@@ -55,14 +55,16 @@ export default function MbelowHeader() {
       </div>
     </div>
 
-    <div style={{ marginTop:400, position: "relative", zIndex: 50 }}>
+    <div style={{ marginTop:380, position: "relative", zIndex: 50,  borderTopLeftRadius: "20px",
+    borderTopRightRadius: "20px",
+    boxShadow: "0 -4px 21px rgba(0, 0, 0, 0.1)", }}>
                 <Mbar />
                 <MedduApp />
                 <MflyImage />
                 <Mcard />
                 <MmultipleImg1 />
-                <MwhyChoseUs />
+              
             </div>
-    </>
-  );
+    </>
+  );
 }

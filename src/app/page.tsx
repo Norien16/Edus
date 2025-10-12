@@ -18,6 +18,7 @@ import Mheader from "@/components/HomePageMobile/Mheader/page";
 import Mbar from "@/components/HomePageMobile/Mbar/page";
 import MbelowHeader from "@/components/HomePageMobile/MbelowHeader/page";
 import Mfooter from "@/components/HomePageMobile/Mfooter/page";
+import MphotoRoom from "@/components/HomePageMobile/MphotoRoom/page";
 
 export default function Home() {
 
@@ -37,7 +38,21 @@ export default function Home() {
         <Mheader/>
         <main className="pt-21">
           <MbelowHeader />
-          <Mfooter />
+          <div
+  style={{
+    marginTop: 400,
+    position: "relative",
+    zIndex: 99,
+    borderTopLeftRadius: "50px",
+    borderTopRightRadius: "50px",
+    boxShadow: "0 -4px 21px rgba(0, 4, 21, 0.1)",
+    overflow: "hidden", // ensures inner content respects the rounding
+  }}
+>
+  <MphotoRoom />
+  
+  <Mfooter />
+</div>
         </main>
       </div>
         : 
@@ -55,6 +70,7 @@ export default function Home() {
       <HeroSlider />
       <FaQs />
       <ExtraComponent />
+      <Footer />
       </main>
       </div>
        }
