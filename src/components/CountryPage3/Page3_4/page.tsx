@@ -16,7 +16,7 @@ export default function Page3_4() {
         />
       </div>
 
-      {/* === Background Image Layer 1 === */}
+      {/* === Background Image Layer 1 ===
       <div className="absolute inset-0 top-[110px] sm:top-[165px] md:top-[200px] z-0 w-full">
         <Image
           src="/images/page4lineImg.png"
@@ -25,7 +25,7 @@ export default function Page3_4() {
           className="object-contain max-w-210 h-auto translate-x-12 md:translate-x-40 lg:translate-x-60 opacity-100"
           priority
         />
-      </div>
+      </div> */}
 
       {/* === Title === */}
       <h2 className="relative z-20 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-center text-[#545454] mb-10 sm:mb-16 md:mb-20">
@@ -33,6 +33,15 @@ export default function Page3_4() {
       </h2>
 
       {/* === Wrapper for cards and dots === */}
+      <div className="relative max-w-6xl mx-auto">
+              {/* === Background Image Layer 1 === */}
+              <Image
+              width={1600}
+              height={1400}
+                src="/images/page4lineImg.png"
+                alt="Deep Background"
+                className="object-contain absolute w-[850px] left-[100px] top-[140px]"
+              />
       <div className="relative z-20 max-w-6xl mx-auto h-[420px] sm:h-[480px] md:h-[500px] scale-90 sm:scale-95 md:scale-100">
         {/* === Card 1 === */}
         <div className="absolute top-0 left-0">
@@ -99,6 +108,7 @@ export default function Page3_4() {
             className="object-contain"
           />
         </div>
+      </div>
       </div>
     </section>
   );

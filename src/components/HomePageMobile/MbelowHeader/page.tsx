@@ -1,12 +1,9 @@
 "use client";
 import React from "react";
 import Mbar from "../Mbar/page";
-import FlyImage from "@/components/Homepage/FlyImage/page";
 import MedduApp from "../MedduApp/page";
 import MflyImage from "../MflyImage/page";
 import Mcard from "../Mcard/page";
-import MmultipleImg from "../MmultipleImg1/page";
-import MwhyChoseUs from "../MwhyChoseUs/page";
 import MmultipleImg1 from "../MmultipleImg1/page";
 
 

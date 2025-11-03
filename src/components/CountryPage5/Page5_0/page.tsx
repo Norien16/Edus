@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 
 export default function Page5_0 () {
@@ -87,9 +88,16 @@ export default function Page5_0 () {
       className="relative flex flex-col md:flex-row bg-[#DFFFFF] items-center justify-center px-4 sm:px-8 md:px-16 lg:px-32 xl:px-40 py-35 overflow-hidden"
     >
         {/* === Background image overlay === */}
-  <div
+  {/* <div
     className="absolute inset-0 bg-[url('/images/birdImg.png')] bg-contain bg-no-repeat left-250 -translate-x-250 translate-y-15 -top-8 opacity-100 pointer-events-none z-0"
-  />
+  /> */}
+  <Image
+        width={600}
+        height={400}
+        src="/images/birdImg.png"
+        alt="kangaroo"
+        className="w-[400px] absolute top-0 left-0"
+         />
       {/* ===== bottom gradient overlay ===== */}
       <div
         aria-hidden="true"

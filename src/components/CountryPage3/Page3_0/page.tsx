@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 
 export default function Page3_0 () {
@@ -87,9 +88,16 @@ export default function Page3_0 () {
       className="relative flex flex-col md:flex-row bg-[#DFFFFF] items-center justify-center px-4 sm:px-8 md:px-16 lg:px-32 xl:px-40 py-35 overflow-hidden"
     >
         {/* === Background image overlay === */}
-  <div
+  {/* <div
     className="absolute inset-0 bg-[url('/images/leafImg.png')] bg-contain bg-no-repeat left-180 translate-y-7 top-50 opacity-100 pointer-events-none z-0"
-  />
+  /> */}
+  <Image
+        width={2600}
+        height={2400}
+        src="/images/leafImg.png"
+        alt="kangaroo"
+        className="w-[700px] absolute bottom-0 right-0"
+         />
       {/* ===== bottom gradient overlay ===== */}
       <div
         aria-hidden="true"

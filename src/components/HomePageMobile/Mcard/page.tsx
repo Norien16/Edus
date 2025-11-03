@@ -6,9 +6,9 @@ export default function Mcard() {
   return (
     <div className="flex justify-center bg-white items-center overflow-visible pb-20 -mt-25">
       <div className="bg-[#FFFFFF] border border-white shadow-[0_12px_30px_rgba(0,0,0,0.18)] rounded-2xl px-10 pt-8 pb-8 h-20">
-        <div className="flex relative gap-10 -translate-y-3">
+        <div className="flex relative gap-5 -translate-y-3">
           {/* Section 1 */}
-          <div className=" flex -translate-x-5">
+          <div className=" flex -translate-x-7">
             <div className="flex items-center gap-3">
               <FaUniversity className="text-[#37D7D9] text-2xl" />
               <div>
@@ -23,7 +23,7 @@ export default function Mcard() {
           </div>
 
           {/* Divider 1 */}
-          <div className="block absolute left-1/3 top-1/2 -translate-y-1/2 w-px h-12 bg-gray-600" />
+          <div className="block absolute left-25  top-1/2 -translate-y-1/2 w-px h-12 bg-gray-600" />
 
           {/* Section 2 */}
           <div className="flex justify-center">
@@ -41,7 +41,7 @@ export default function Mcard() {
           </div>
 
           {/* Divider 2 */}
-          <div className="block absolute left-63 top-1/2 -translate-y-1/2 w-px h-12 bg-gray-800" />
+          <div className="block absolute left-56 top-1/2 -translate-y-1/2 w-px h-12 bg-gray-800" />
 
           {/* Section 3 */}
           <div className=" flex translate-x-5">

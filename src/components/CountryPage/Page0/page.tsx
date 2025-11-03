@@ -1,7 +1,8 @@
 "use client";
+import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 
-export default function Page0 () {
+export default function Page0() {
   const sectionRef = useRef(null);
   const placeholderRef = useRef(null);
   const [opacity, setOpacity] = useState(1);
@@ -84,12 +85,17 @@ export default function Page0 () {
     <section
       id="below-header"
       ref={sectionRef}
-      className="relative flex flex-col md:flex-row bg-[#DFFFFF] items-center justify-center px-4 sm:px-8 md:px-16 lg:px-32 xl:px-40 py-35 overflow-hidden"
+      className="relative w-full flex flex-col md:flex-row bg-[#DFFFFF] items-center justify-center px-4 sm:px-8 md:px-16 lg:px-32 xl:px-40 py-35 overflow-hidden"
     >
-        {/* === Background image overlay === */}
-  <div
-    className="absolute inset-0 bg-[url('/images/kangarooImg.png')] bg-contain bg-no-repeat left-270 translate-y-25 top-10 opacity-100 pointer-events-none z-0"
-  />
+      {/* === Background image overlay === */}
+      {/* <div className="absolute inset-0 bg-[url('/images/kangarooImg.png')] bg-contain bg-no-repeat left-0 translate-y-25 bottom-10 opacity-100 z-0" /> */}
+      <Image
+      width={600}
+      height={400}
+      src="/images/kangarooImg.png"
+      alt="kangaroo"
+      className="w-[250px] absolute bottom-0 right-0"
+       />
       {/* ===== bottom gradient overlay ===== */}
       <div
         aria-hidden="true"
@@ -116,7 +122,8 @@ export default function Page0 () {
           style={{ fontFamily: "DM Sans" }}
         >
           <span className="block text-base sm:text-lg">
-            Unlock your future with globally recognized degrees, vibrant student life, and career pathways in one of the
+            Unlock your future with globally recognized degrees, vibrant student
+            life, and career pathways in one of the
           </span>
           <span className="block text-base sm:text-lg">
             world’s most welcoming countries.

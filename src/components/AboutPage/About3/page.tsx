@@ -8,14 +8,14 @@ const About3: React.FC = () => {
     <>
       {/* Heading */}
       <h1
-        className="text-3xl sm:text-4xl md:text-5xl w-[90%] md:w-[80%] mx-auto p-4 -mt-6 md:-mt-10 text-center tracking-wide font-extrabold"
+        className="text-3xl sm:text-4xl md:text-5xl w-full md:max-w-[1100px] mx-auto p-4 -mt-6 md:-mt-10 text-center tracking-wide font-extrabold"
         style={{ fontWeight: 1000 }}
       >
         Meet Our Founders
       </h1>
 
       {/* Quote Section */}
-      <div className="bg-white rounded-bl-[40px] mt-5 rounded-tr-[40px] shadow-[0_0_25px_rgba(0,0,0,0.15)] w-[90%] md:w-[76%] mx-auto p-6 text-center relative">
+      <div className="bg-white rounded-bl-[40px] mt-5 rounded-tr-[40px] shadow-[0_0_25px_rgba(0,0,0,0.15)] w-full md:max-w-[1080px] mx-auto p-6 text-center relative">
         <div className="px-4 sm:px-6 md:px-10" style={{ fontFamily: "DM Sans" }}>
           {/* Opening quote */}
           <div className="absolute left-4 top-2 md:left-5 md:-top-2">
@@ -52,12 +52,12 @@ const About3: React.FC = () => {
       </div>
 
       {/* Founders Grid */}
-      <div className="w-[90%] md:w-[80%] mx-auto p-6 sm:p-8">
+      <div className="w-full md:max-w-[1100px] mx-auto p-6 sm:p-8">
         <div className="space-y-8">
           {/* Anjan Singh */}
-          <div className="bg-white rounded-bl-[60px] rounded-tr-[70px] shadow-[0_0_25px_rgba(0,0,0,0.15)] overflow-hidden">
+          <div className="bg-white rounded-bl-[60px] rounded-tl-[70px] shadow-[0_0_25px_rgba(0,0,0,0.15)] overflow-hidden">
             <div className="flex flex-col md:flex-row">
-              <div className="w-full md:w-[33%] flex justify-center items-start">
+              <div className="w-full md:w-[330px] flex justify-center items-start">
                 <div className="overflow-hidden p-4 md:p-0">
                   <Image
                     src="/images/about3Img2.png"
@@ -68,7 +68,7 @@ const About3: React.FC = () => {
                   />
                 </div>
               </div>
-              <div className="w-full md:w-[76%] p-4">
+              <div className="w-full md:max-w-[650px] p-4">
                 <h2 className="text-xl sm:text-2xl font-bold text-[#000000] mb-4">
                   Anjan Singh
                 </h2>
@@ -100,18 +100,18 @@ const About3: React.FC = () => {
           {/* Paramdip Singh */}
           <div className="bg-white rounded-bl-[40px] rounded-tr-[70px] shadow-[0_0_25px_rgba(0,0,0,0.15)] overflow-hidden">
             <div className="flex flex-col md:flex-row-reverse">
-              <div className="w-full md:w-[33%] flex justify-center items-start">
-                <div className="overflow-hidden p-4 md:p-0">
+              <div className="w-full md:max-w-[365px] flex justify-center items-start">
+                <div className="overflow-hidden">
                   <Image
                     src="/images/about3Img1.png"
                     alt="Paramdip Singh"
                     width={350}
                     height={350}
-                    className="w-[160px] sm:w-[230px] md:w-[270px] lg:w-[330px] h-auto object-contain"
+                    className="w-full md:w-[380px] h-auto object-contain"
                   />
                 </div>
               </div>
-              <div className="w-full md:w-[76%] p-4">
+              <div className="w-full md:max-w-[650px] p-4">
                 <h2 className="text-xl sm:text-2xl font-bold text-[#000000] mb-4">
                   Paramdip Singh
                 </h2>

@@ -178,7 +178,7 @@ const HeroSlider: React.FC = () => {
         .progress-keyframe-70 { left: 62%; top: 20%; opacity: 1; }
         .progress-keyframe-90 { left: 87%; top: 20%; opacity: 0; }
 
-        .nav-button {
+        .nav-buttond {
           position: absolute;
           top: 50%;
           transform: translateY(-50%);
@@ -192,8 +192,8 @@ const HeroSlider: React.FC = () => {
           align-items: center;
           justify-content: center;
         }
-        .nav-button.left { left: 4%; }
-        .nav-button.right { right: 5%; }
+        .nav-buttond.left { left: 4%; }
+        .nav-buttond.right { right: 5%; }
 
         /* ✅ Responsiveness */
         @media (max-width: 1024px) {
@@ -232,7 +232,7 @@ const HeroSlider: React.FC = () => {
       `}</style>
 
       <div className="progress-container">
-        <button className="nav-button left" onClick={handlePrev}>
+        <button className="nav-buttond left" onClick={handlePrev}>
           <Image
             src="/images/sliderleftImg.png"
             alt="Previous"
@@ -265,7 +265,7 @@ const HeroSlider: React.FC = () => {
           </div>
         ))}
 
-        <button className="nav-button right" onClick={handleNext}>
+        <button className="nav-buttond right" onClick={handleNext}>
           <Image
             src="/images/sliderrightImg.png"
             alt="Next"

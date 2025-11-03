@@ -16,7 +16,7 @@ export default function Page5() {
         />
       </div>
 
-      {/* === Background Image Layer 2 === */}
+      {/* === Background Image Layer 2 ===
       <div className="absolute w-[180px] h-[400px] md:w-[270px] md:h-[650px] top-[200px] md:top-[360px] inset-0 z-0">
         <Image
           src="/images/page5lineImg.png"
@@ -25,7 +25,7 @@ export default function Page5() {
           className="object-contain translate-x-28 md:translate-x-140 -translate-y-8 md:-translate-y-12 opacity-100"
           priority
         />
-      </div>
+      </div> */}
 
       {/* === Title === */}
       <h2 className="relative z-20 text-2xl md:text-3xl lg:text-4xl font-bold text-center text-[#545454] mb-10 md:mb-30 px-4">
@@ -33,17 +33,27 @@ export default function Page5() {
       </h2>
 
       {/* === Wrapper === */}
+      <div className="relative max-w-4xl mx-auto">
+        {/* === Background Image Layer 1 === */}
+                <Image
+                width={1600}
+                height={1400}
+                  src="/images/page5lineImg.png"
+                  alt="Deep Background"
+                  className="object-contain absolute w-[187px] left-[330px] top-[28px]"
+                />
       <div className="relative z-20 max-w-4xl mx-auto h-[400px] md:h-[500px] px-6">
         {/* === Academic Transcripts === */}
-        <div className="absolute top-0 right-0 flex items-center gap-2 md:gap-3">
+        <div className="absolute top-0 right-5 flex items-center gap-2 md:gap-3">
           <Image src="/images/page4dotImg.png" alt="Dot" width={36} height={36} className="md:w-[44px] md:h-[44px]" />
           <p className="text-lg md:text-xl text-[#000000] max-w-[220px] md:max-w-xs" style={{ fontFamily: "DM Sans" }}>
             Academic Transcripts (Minimum GPA Varies)
           </p>
         </div>
 
+
         {/* === IELTS / TOEFL === */}
-        <div className="absolute top-[120px] md:top-[180px] left-6 md:left-16 flex items-center gap-2 md:gap-3">
+        <div className="absolute top-[120px] md:top-[180px] left-6 md:left-14 flex items-center gap-2 md:gap-3">
           <p className="text-lg md:text-xl text-[#000000] max-w-[200px] md:max-w-xs text-right" style={{ fontFamily: "DM Sans" }}>
             IELTS / PTE / TOEFL English<br /> Test
           </p>
@@ -51,7 +61,7 @@ export default function Page5() {
         </div>
 
         {/* === SOP === */}
-        <div className="absolute top-[240px] md:top-[350px] right-6 md:right-[110px] flex items-center gap-2 md:gap-3">
+        <div className="absolute top-[240px] md:top-[350px] right-6 md:right-[85px] flex items-center gap-2 md:gap-3">
           <Image src="/images/page4dotImg.png" alt="Dot" width={36} height={36} className="md:w-[44px] md:h-[44px]" />
           <p className="text-lg md:text-xl text-[#000000] max-w-[220px] md:max-w-xs" style={{ fontFamily: "DM Sans" }}>
             Statement Of Purpose (SOP)
@@ -59,7 +69,7 @@ export default function Page5() {
         </div>
 
         {/* === Resume + Recommendation === */}
-        <div className="absolute -bottom-[40px] md:-bottom-[60px] left-0 md:-left-[10px] flex items-center gap-2 md:gap-3">
+        <div className="absolute -bottom-[40px] md:-bottom-[60px] left-0 md:-left-[20px] flex items-center gap-2 md:gap-3">
           <p className="text-lg md:text-xl text-[#000000] max-w-[220px] md:max-w-xs text-right" style={{ fontFamily: "DM Sans" }}>
             Resume + Recommendation Letters (For Postgrad)
           </p>
@@ -73,6 +83,7 @@ export default function Page5() {
             Valid Passport
           </p>
         </div>
+      </div>
       </div>
     </section>
   );

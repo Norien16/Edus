@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link"; // ✅ import Link
 import React, { useState } from "react";
 
 type Marker = {
@@ -8,6 +9,7 @@ type Marker = {
   country: string;
   description: string;
   images: string[];
+  link: string; // ✅ added
   cardPosition?: string;
   overlayPosition?: string;
   overlayImages?: { src: string; width?: number; height?: number }[];
@@ -21,14 +23,18 @@ const markers: Marker[] = [
     description:
       "“Canada offers globally recognized education, affordable study options, and a welcoming multicultural community.”",
     images: [
-      "/images/hovslide1.png",
-      "/images/hovslide2.png",
-      "/images/hovslide3.png",
-      "/images/hovslide4.png",
+      "/images/canslideImg1.png",
+      "/images/canslideImg2.png",
+      "/images/canslideImg3.png",
+      "/images/canslideImg4.png",
+      "/images/canslideImg5.png",
+      "/images/canslideImg6.png",
+      "/images/canslideImg7.png",
     ],
     overlayImages: [{ src: "/images/updotImg.png", width: 345, height: 250 }],
     cardPosition: "-top-[257px] right-[-172px]",
     overlayPosition: "top-[-262px] left-[-167px]",
+    link: "/StudyDestinations/countrypage3", // ✅ added individual link
   },
   {
     left: "267px",
@@ -37,14 +43,18 @@ const markers: Marker[] = [
     description:
       "“The USA is home to top-ranked institutions, cutting-edge research, and endless career opportunities.”",
     images: [
-      "/images/hovslide1.png",
-      "/images/hovslide2.png",
-      "/images/hovslide3.png",
-      "/images/hovslide4.png",
+      "/images/usaslideImg1.png",
+      "/images/usaslideImg2.png",
+      "/images/usaslideImg3.png",
+      "/images/usaslideImg4.png",
+      "/images/usaslideImg5.png",
+      "/images/usaslideImg6.png",
+      "/images/usaslideImg7.png",
     ],
     overlayImages: [{ src: "/images/downdotImg.png", width: 345, height: 250 }],
     cardPosition: "top-[20px] right-[-172px]",
     overlayPosition: "top-[-19px] left-[-167px]",
+    link: "/StudyDestinations/countrypage5", // ✅
   },
   {
     left: "538px",
@@ -53,14 +63,18 @@ const markers: Marker[] = [
     description:
       "“The UK provides prestigious universities, diverse courses, and a rich cultural and academic heritage.”",
     images: [
-      "/images/hovslide1.png",
-      "/images/hovslide2.png",
-      "/images/hovslide3.png",
-      "/images/hovslide4.png",
+      "/images/ukslideImg1.png",
+      "/images/ukslideImg2.png",
+      "/images/ukslideImg3.png",
+      "/images/ukslideImg4.png",
+      "/images/ukslideImg5.png",
+      "/images/ukslideImg6.png",
+      "/images/ukslideImg7.png",
     ],
     overlayImages: [{ src: "/images/downdotImg.png", width: 345, height: 250 }],
     cardPosition: "right-[-172.5px] top-[22px]",
     overlayPosition: "top-[-19px] left-[-167px]",
+    link: "/StudyDestinations/countrypage4", // ✅
   },
   {
     left: "590px",
@@ -69,14 +83,18 @@ const markers: Marker[] = [
     description:
       "“Germany offers tuition-free or low-cost education, strong research facilities, and globally respected degrees.”",
     images: [
-      "/images/hovslide1.png",
-      "/images/hovslide2.png",
-      "/images/hovslide3.png",
-      "/images/hovslide4.png",
+      "/images/gerslideImg1.png",
+      "/images/gerslideImg2.png",
+      "/images/gerslideImg3.png",
+      "/images/gerslideImg4.png",
+      "/images/gerslideImg5.png",
+      "/images/gerslideImg6.png",
+      "/images/gerslideImg7.png",
     ],
     overlayImages: [{ src: "/images/downdotImg.png", width: 345, height: 250 }],
     cardPosition: "right-[-172.5px] top-[22px]",
     overlayPosition: "top-[-19px] left-[-167px]",
+    link: "/StudyDestinations/countrypage6", // ✅
   },
   {
     left: "94%",
@@ -85,14 +103,18 @@ const markers: Marker[] = [
     description:
       "“New Zealand combines high-quality education with a safe, student-friendly environment and great work pathways.”",
     images: [
-      "/images/hovslide1.png",
-      "/images/hovslide2.png",
-      "/images/hovslide3.png",
-      "/images/hovslide4.png",
+      "/images/nzslideImg1.png",
+      "/images/nzslideImg2.png",
+      "/images/nzslideImg3.png",
+      "/images/nzslideImg4.png",
+      "/images/nzslideImg5.png",
+      "/images/nzslideImg6.png",
+      "/images/nzslideImg7.png",
     ],
     overlayImages: [{ src: "/images/downsidedotImg.png", width: 370, height: 250 }],
     cardPosition: "right-[-8px] top-[-224px]",
     overlayPosition: "top-[-235px] left-[-330px]",
+    link: "/StudyDestinations/countrypage7", // ✅
   },
   {
     left: "1016px",
@@ -101,14 +123,18 @@ const markers: Marker[] = [
     description:
       "“Australia is known for its world-class universities, practical learning, and excellent post-study work opportunities.”",
     images: [
-      "/images/hovslide1.png",
-      "/images/hovslide2.png",
-      "/images/hovslide3.png",
-      "/images/hovslide4.png",
+      "/images/ausslideImg1.png",
+      "/images/ausslideImg2.png",
+      "/images/ausslideImg3.png",
+      "/images/ausslideImg4.png",
+      "/images/ausslideImg5.png",
+      "/images/ausslideImg6.png",
+      "/images/ausslideImg7.png",
     ],
     overlayImages: [{ src: "/images/fullsidedotImg.png", width: 370, height: 250 }],
     cardPosition: "right-[-5px] top-[-104px]",
     overlayPosition: "top-[-112px] left-[-330px]",
+    link: "/StudyDestinations/countrypage1", // ✅
   },
 ];
 
@@ -194,9 +220,11 @@ const ExploreDestination: React.FC = () => {
         </div>
       </div>
 
-      <button className="mt-2 px-4 py-1 text-sm bg-[#37D7D9] text-white rounded-full hover:bg-[#2cc2c4] hover:shadow-md hover:shadow-gray-400 transition-shadow duration-300 ease-in-out">
-        Learn More
-      </button>
+      <Link href={marker.link}>
+  <button className="mt-2 px-4 py-1 text-sm bg-[#37D7D9] text-white rounded-full hover:bg-[#2cc2c4] hover:shadow-md hover:shadow-gray-400 transition-shadow duration-300 ease-in-out">
+    Learn More
+  </button>
+</Link>
     </div>
   </div>
 ))}

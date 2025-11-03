@@ -46,7 +46,7 @@ const MflyImage = () => {
           style={{ fontFamily: "DM Sans" }}
         >
           {features.map((feature, index) => (
-            <li key={index} className="flex items-center">
+            <li key={index} className="flex items-center relative -left-6">
               <img
                 src="/images/tickImg.png"
                 alt="tick"

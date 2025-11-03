@@ -1,50 +1,50 @@
 "use client";
-// import type { Metadata } from "next";
+
 import { DM_Sans, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header/page";
 import Footer from "@/components/footer/page";
 import { usePathname } from "next/navigation";
+import Mheader from "@/components/HomePageMobile/Mheader/page";
 
-// DM Sans
+// Fonts
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
   subsets: ["latin"],
-  weight: ["400", "500", "700"], // pick the weights you need
+  weight: ["400", "500", "700"],
 });
 
-// Space Grotesk
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
 });
 
-// export const metadata: Metadata = {
-//   title: "Edulinks",
-//   description: "",
-// };
-
 export default function RootLayout({
-  
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
-
+}) {
   // const pathname = usePathname();
-
-  // // 👇 Define pages where you don’t want footer
   // const hideFooterOn = ["/ourservices"];
-
   // const shouldHideFooter = hideFooterOn.includes(pathname);
-  
+
   return (
     <html lang="en">
-      <body className={`${dmSans.variable} ${spaceGrotesk.variable} antialiased`}>
-        <Header />
+      <body
+        className={`${dmSans.variable} ${spaceGrotesk.variable} antialiased`}
+      >
+        {/* 👇 Show mobile header on small screens, desktop header on larger screens */}
+        <div className="block md:hidden">
+          <Mheader />
+        </div>
+        <div className="hidden md:block">
+          <Header />
+        </div>
+
         <main>{children}</main>
-        {/* {!shouldHideFooter && <Footer />} 👈 Conditional */}
+
+        {/* {!shouldHideFooter && <Footer />} */}
       </body>
     </html>
   );

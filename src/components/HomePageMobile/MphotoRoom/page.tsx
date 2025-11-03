@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { FaChevronCircleDown, FaChevronCircleUp } from "react-icons/fa";
+import HeroSlider from "@/components/Homepage/HeroSlider/page";
+import MheroSlider from "../MheroSlider/page";
 
 type FAQ = {
   question: string;
@@ -65,7 +67,7 @@ const MphotoRoom: React.FC = () => {
             <div className="w-full flex justify-center mt-2 mb-8">
               <div className="w-[400px] h-[350px] relative">
                 <Image
-                  src="/images/gradimg.png"
+                  src="/images/gradImg1.png"
                   alt="Graduate illustration"
                   fill
                   sizes="(max-width: 440px) 300px, 300px"
@@ -78,7 +80,7 @@ const MphotoRoom: React.FC = () => {
 
           {/* Top Features Image */}
           <div className="w-full flex justify-center mb-4">
-            <div className="w-[400px] h-[200px] relative">
+            <div className="w-[400px] h-[320px] relative">
               <Image
                 src="/images/mcardgrpImg.png"
                 alt="EduLinks Features Overview"
@@ -117,19 +119,19 @@ const MphotoRoom: React.FC = () => {
           </h1>
 
           {/* Body text */}
-          <p className="mt-3 text-base text-[#666666] text-center text-[16px] leading-[21px]">
+          <p className="mt-3 px-4 text-base text-[#666666] text-center text-[16px] leading-[21px]">
             A vibrant, inclusive space built for students across the world to ask
             questions, share real-life experiences, solve problems together, and
             uplift
-            <br /> one another throughout their study abroad
-            <br /> journey. Whether youre choosing a country,
-            <br /> preparing for language tests, applying for visas, or
-            <br /> simply adjusting to a new culture, this community
-            <br /> is here to support you every step of the way. Gain
-            <br /> insights from those who’ve been there, stay
-            <br /> updated with essential information, and never feel
-            <br /> alone in your journey because we grow stronger
-            <br /> when we learn together.
+            one another throughout their study abroad
+            journey. Whether youre choosing a country,
+            preparing for language tests, applying for visas, or
+            simply adjusting to a new culture, this community
+            is here to support you every step of the way. Gain
+            insights from those who’ve been there, stay
+            updated with essential information, and never feel
+            alone in your journey because we grow stronger
+            when we learn together.
           </p>
 
           {/* Buttons */}
@@ -152,7 +154,11 @@ const MphotoRoom: React.FC = () => {
           {/* Divider */}
           <div className="my-10"></div>
 
-          {/* Testimonials */}
+          <div>
+            <MheroSlider />
+          </div>
+
+          {/* Testimonials
           <section className="text-center">
             <h2 className="text-[22px] font-medium text-[#545454] mb-2">
               Real Students. Real Progress.
@@ -163,18 +169,18 @@ const MphotoRoom: React.FC = () => {
               <br /> and achievement. Tangible transformation you can
               <br /> trust.
             </p>
-          </section>
+          </section> */}
 
           {/* Get in Touch Button */}
-          <button
+          {/* <button
             className="flex justify-center mx-auto px-4 py-1.5 mt-100 rounded-full bg-[#37D7D9] text-white font-semibold text-[14px] shadow-sm"
             aria-label="Get in Touch"
           >
             Get in Touch
-          </button>
+          </button> */}
 
           {/* Divider before FAQ */}
-          <div className="mt-20"></div>
+          <div className="mt-10"></div>
 
           {/* FAQ Section */}
           <section className="w-full">

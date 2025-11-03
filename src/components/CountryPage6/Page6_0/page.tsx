@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 
 export default function Page6_0 () {
@@ -87,9 +88,16 @@ export default function Page6_0 () {
       className="relative flex flex-col md:flex-row bg-[#DFFFFF] items-center justify-center px-4 sm:px-8 md:px-16 lg:px-32 xl:px-40 py-35 overflow-hidden"
     >
         {/* === Background image overlay === */}
-  <div
+  {/* <div
     className="absolute inset-0 bg-[url('/images/buildingImg.png')] bg-contain bg-no-repeat left-290 -translate-x-280 opacity-100 pointer-events-none z-0"
-  />
+  /> */}
+  <Image
+        width={600}
+        height={400}
+        src="/images/buildingImg.png"
+        alt="kangaroo"
+        className="w-[250px] absolute top-0 left-0"
+         />
       {/* ===== bottom gradient overlay ===== */}
       <div
         aria-hidden="true"

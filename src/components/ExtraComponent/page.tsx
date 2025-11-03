@@ -36,7 +36,7 @@ const ExtraComponent: React.FC = () => {
         {/* RIGHT SIDE (Single Phones Image) */}
         <div className="flex-1 flex justify-center">
           <Image
-            src="/images/twophonesImg.png" // 👈 combine your two phones into one PNG
+            src="/images/phonesImg.png" // 👈 combine your two phones into one PNG
             alt="Mobile App Preview"
             width={500}
             height={500}

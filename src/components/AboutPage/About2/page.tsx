@@ -10,7 +10,7 @@ const About2: React.FC = () => {
       style={{ fontFamily: "DM Sans" }}
     >
       {/* Parent section */}
-      <section className="flex flex-col md:flex-row w-full md:w-[80%] gap-10 md:gap-20 items-center md:ml-12">
+      <section className="flex flex-col md:flex-row w-full md:max-w-[1200px] gap-10 md:gap-20 items-center md:ml-12">
         
         {/* LEFT SIDE: IMAGE */}
         <div className="w-full md:w-[35%]">

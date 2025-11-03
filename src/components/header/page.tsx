@@ -73,42 +73,42 @@ function Header() {
         className="px-4 py-2 hover:bg-gray-100 pl-5 group/item"
       >
   <span className="absolute left-0 top-1 h-10 w-1 bg-[#37D7D9] rounded-r transition-all duration-300 scale-y-0 group-hover/item:scale-y-100 origin-top"></span>
-        Study in Autralia
+        Autralia
       </Link>
       <Link
         href="/StudyDestinations/countrypage2"
         className="px-4 py-2 hover:bg-gray-100 pl-5 group/item"
       >
         <span className="absolute left-0 top-11 h-9 w-1 bg-[#37D7D9] rounded-r transition-all duration-300 scale-y-0 group-hover/item:scale-y-100 origin-top"></span>
-        Study in New Zealand
+        New Zealand
       </Link>
       <Link
         href="/StudyDestinations/countrypage3"
         className="px-4 py-2 hover:bg-gray-100 pl-5 group/item"
       >
         <span className="absolute left-0 top-20 h-9 w-1 bg-[#37D7D9] rounded-r transition-all duration-300 scale-y-0 group-hover/item:scale-y-100 origin-top"></span>
-        Study in Canada
+        Canada
       </Link>
       <Link
         href="/StudyDestinations/countrypage4"
         className="px-4 py-2 hover:bg-gray-100 pl-5 group/item"
       >
         <span className="absolute left-0 top-29 h-9 w-1 bg-[#37D7D9] rounded-r transition-all duration-300 scale-y-0 group-hover/item:scale-y-100 origin-top"></span>
-        Study in UK
+        UK
       </Link>
       <Link
         href="/StudyDestinations/countrypage5"
         className="px-4 py-2 hover:bg-gray-100 pl-5 group/item"
       >
         <span className="absolute left-0 top-38 h-9 w-1 bg-[#37D7D9]0 rounded-r transition-all duration-300 scale-y-0 group-hover/item:scale-y-100 origin-top"></span>
-        Study in USA
+        USA
       </Link>
       <Link
         href="/StudyDestinations/countrypage6"
         className="px-4 py-2 hover:bg-gray-100 pl-5 group/item"
       >
         <span className="absolute left-0 top-47 h-10 w-1 bg-[#37D7D9] rounded-r transition-all duration-300 scale-y-0 group-hover/item:scale-y-100 origin-top"></span>
-        Study in Germany
+        Germany
       </Link>
     </div>
   </div>
@@ -130,82 +130,150 @@ function Header() {
         AI-Powered Test
       </Link>
       <Link
-        href="/ourservices/"
+        href="/ourservices/services1"
         className="px-4 py-2 hover:bg-gray-100 pl-5 group/item"
       >
-        Visa Guidance
+        <span className="absolute left-0 top-10 h-10 w-1 bg-[#37D7D9] rounded-r transition-all duration-300 scale-y-0 group-hover/item:scale-y-100 origin-top"></span>
+        English Language Assessment
       </Link>
       <Link
-        href="/services/test-preparation"
-        className="px-4 py-2 hover:bg-gray-100"
+        href="/ourservices/services2"
+        className="px-4 py-2 hover:bg-gray-100 pl-5 group/item"
       >
-        Test Preparation
+        <span className="absolute left-0 top-17 h-6 w-1 bg-[#37D7D9] rounded-r transition-all duration-300 scale-y-0 group-hover/item:scale-y-100 origin-top"></span>
+        Community Hub
       </Link>
       <Link
-        href="/services/admission"
-        className="px-4 py-2 hover:bg-gray-100"
+        href="/ourservices/services3"
+        className="px-4 py-2 hover:bg-gray-100 pl-5 group/item"
       >
-        Admission Assistance
+        <span className="absolute left-0 top-21 h-10 w-1 bg-[#37D7D9] rounded-r transition-all duration-300 scale-y-0 group-hover/item:scale-y-100 origin-top"></span>
+        AI Guidance & Counselor Support
       </Link>
     </div>
   </div>
 
   {/* Top Universities Dropdown */}
   <div className="relative flex flex-row group">
-    <Link
-      href="/topuniversity"
-      className="hover:text-teal-600 cursor-pointer"
-    >
       Top Universities
-    </Link>
     <FaChevronDown className="text-[12px] mt-1 ml-1 transition-transform duration-300 group-hover:rotate-180" />
     <div
       className="absolute left-0 top-full hidden group-hover:flex flex-col bg-white shadow-lg rounded-lg w-60 py-2 z-50"
     >
       <Link
-        href="/topuniversity/topuniversityaus"
+        href="/topunis/topuniversityaus"
         className="px-4 py-2 hover:bg-gray-100 pl-5 group/item"
       >
         <span className="absolute left-0 top-1 h-10 w-1 bg-[#37D7D9] rounded-r transition-all duration-300 scale-y-0 group-hover/item:scale-y-100 origin-top"></span>
-        Top Universities in Austraila
+        Austraila
       </Link>
       <Link
-        href="/topuniversity/topuniversitycan"
+        href="/topunis/topuniversitycan"
         className="px-4 py-2 hover:bg-gray-100 pl-5 group/item"
       >
         <span className="absolute left-0 top-11 h-10 w-1 bg-[#37D7D9] rounded-r transition-all duration-300 scale-y-0 group-hover/item:scale-y-100 origin-top"></span>
-        Top Universities in Canada
+        Canada
       </Link>
       <Link
-        href="/topuniversity/canada"
-        className="px-4 py-2 hover:bg-gray-100"
+        href="/topunis/topuniversityger"
+        className="px-4 py-2 hover:bg-gray-100 pl-5 group/item"
       >
-        Top Universities in Canada
+        <span className="absolute left-0 top-20 h-10 w-1 bg-[#37D7D9] rounded-r transition-all duration-300 scale-y-0 group-hover/item:scale-y-100 origin-top"></span>
+        Germany
       </Link>
       <Link
-        href="/topuniversity/australia"
-        className="px-4 py-2 hover:bg-gray-100"
+        href="/topunis/topuniversitynz"
+        className="px-4 py-2 hover:bg-gray-100 pl-5 group/item"
       >
-        Top Universities in Australia
+        <span className="absolute left-0 top-29 h-14 w-1 bg-[#37D7D9] rounded-r transition-all duration-300 scale-y-0 group-hover/item:scale-y-100 origin-top"></span>
+        New Zealand
+      </Link>
+      <Link
+        href="/topunis/topuniversityuk"
+        className="px-4 py-2 hover:bg-gray-100 pl-5 group/item"
+      >
+        <span className="absolute left-0 top-43 h-9 w-1 bg-[#37D7D9] rounded-r transition-all duration-300 scale-y-0 group-hover/item:scale-y-100 origin-top"></span>
+        UK
+      </Link>
+      <Link
+        href="/topunis/topuniversityusa"
+        className="px-4 py-2 hover:bg-gray-100 pl-5 group/item"
+      >
+        <span className="absolute left-0 top-52 h-9 w-1 bg-[#37D7D9] rounded-r transition-all duration-300 scale-y-0 group-hover/item:scale-y-100 origin-top"></span>
+        USA
       </Link>
     </div>
   </div>
 
-  <Link href="/careers" className="hover:text-teal-600">
-    Careers
-  </Link>
+  {/* Top Universities Dropdown */}
+  <div className="relative flex flex-row group">
+      Career
+    <FaChevronDown className="text-[12px] mt-1 ml-1 transition-transform duration-300 group-hover:rotate-180" />
+    <div
+      className="absolute left-0 top-full hidden group-hover:flex flex-col bg-white shadow-lg rounded-lg w-60 py-2 z-50"
+    >
+      <Link
+        href="/maincareer/topcareer1"
+        className="px-4 py-2 hover:bg-gray-100 pl-5 group/item"
+      >
+        <span className="absolute left-0 top-1 h-10 w-1 bg-[#37D7D9] rounded-r transition-all duration-300 scale-y-0 group-hover/item:scale-y-100 origin-top"></span>
+        Austraila
+      </Link>
+      <Link
+        href="/maincareer/topcareer2"
+        className="px-4 py-2 hover:bg-gray-100 pl-5 group/item"
+      >
+        <span className="absolute left-0 top-11 h-9 w-1 bg-[#37D7D9] rounded-r transition-all duration-300 scale-y-0 group-hover/item:scale-y-100 origin-top"></span>
+        Canada
+      </Link>
+      <Link
+        href="/maincareer/topcareer3"
+        className="px-4 py-2 hover:bg-gray-100 pl-5 group/item"
+      >
+        <span className="absolute left-0 top-20 h-9 w-1 bg-[#37D7D9] rounded-r transition-all duration-300 scale-y-0 group-hover/item:scale-y-100 origin-top"></span>
+        Germany
+      </Link>
+      <Link
+        href="/maincareer/topcareer4"
+        className="px-4 py-2 hover:bg-gray-100 pl-5 group/item"
+      >
+        <span className="absolute left-0 top-29 h-9 w-1 bg-[#37D7D9] rounded-r transition-all duration-300 scale-y-0 group-hover/item:scale-y-100 origin-top"></span>
+        New Zealand
+      </Link>
+      <Link
+        href="/maincareer/topcareer5"
+        className="px-4 py-2 hover:bg-gray-100 pl-5 group/item"
+      >
+        <span className="absolute left-0 top-38 h-9 w-1 bg-[#37D7D9] rounded-r transition-all duration-300 scale-y-0 group-hover/item:scale-y-100 origin-top"></span>
+        UK
+      </Link>
+      <Link
+        href="/maincareer/topcareer6"
+        className="px-4 py-2 hover:bg-gray-100 pl-5 group/item"
+      >
+        <span className="absolute left-0 top-47 h-9 w-1 bg-[#37D7D9] rounded-r transition-all duration-300 scale-y-0 group-hover/item:scale-y-100 origin-top"></span>
+        USA
+      </Link>
+    </div>
+  </div>
 </nav>
 
 
       {/* Desktop Buttons */}
-      <div className="hidden md:flex space-x-2">
-        <button className="border border-[#37D7D9] text-[#37D7D9] text-md px-3 py-2 rounded-full hover:bg-teal-50 hover:shadow-md hover:shadow-gray-400 transition-shadow duration-300 ease-in-out">
-          Edulink AI Assistant
-        </button>
-        <button className="bg-[#37D7D9] text-md text-white px-3 py-2 rounded-full hover:bg-[#00B7C1] hover:shadow-md hover:shadow-gray-400 transition-shadow duration-300 ease-in-out">
-          Register/Sign In
-        </button>
-      </div>
+<div className="hidden md:flex space-x-2">
+  <Link href="/contactus/aiassistant">
+    <button className="border border-[#37D7D9] text-[#37D7D9] text-md px-3 py-2 rounded-full hover:bg-teal-50 hover:shadow-md hover:shadow-gray-400 transition-shadow duration-300 ease-in-out">
+      Edulink AI Assistant
+    </button>
+  </Link>
+
+  <Link href="/contactus">
+    <button className="bg-[#37D7D9] text-md text-white px-3 py-2 rounded-full hover:bg-[#00B7C1] hover:shadow-md hover:shadow-gray-400 transition-shadow duration-300 ease-in-out">
+      Register/Sign In
+    </button>
+  </Link>
+</div>
+
 
       {/* Mobile Hamburger */}
       <button
@@ -233,7 +301,7 @@ function Header() {
           <Link href="/topuniversity" onClick={() => setMenuOpen(false)}>
             Top Universities
           </Link>
-          <Link href="/careers" onClick={() => setMenuOpen(false)}>
+          <Link href="/career" onClick={() => setMenuOpen(false)}>
             Careers
           </Link>
 

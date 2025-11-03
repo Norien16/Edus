@@ -10,41 +10,30 @@ import Mabout4 from "@/components/AboutPageMobile/Mabout4/page";
 import Footer from "@/components/footer/page";
 import Mfooter from "@/components/HomePageMobile/Mfooter/page";
 import Mheader from "@/components/HomePageMobile/Mheader/page";
-import { useEffect, useState } from "react";
 
-
-export default function About () {
-
-    const [isMobile, setIsMobile] = useState(false);
-    
-      useEffect(() => {
-        const handleResize = () => setIsMobile(window.innerWidth < 768);
-        handleResize(); // Initial check
-        window.addEventListener("resize", handleResize);
-        return () => window.removeEventListener("resize", handleResize);
-      }, []);
-
-    return (
-        <div>
-             {isMobile ? 
-             <div>
-        <Mheader/>
+export default function About() {
+  return (
+    <div>
+      {/* ✅ Mobile version */}
+      <div className="block md:hidden">
+        <Mheader />
         <main className="pt-21">
-            <Mabout1 />
-            <Mabout2 />
-            <Mabout3 />
-            <Mabout4 />
+          <Mabout1 />
+          <Mabout2 />
+          <Mabout3 />
+          <Mabout4 />
           <Mfooter />
         </main>
       </div>
-      :
-      <div>
-            <About1 />
-            <About2 />
-            <About3 />
-            <About4 />
-            <Footer />
-        </div>}
-        </div>
-    )
+
+      {/* ✅ Desktop version */}
+      <div className="hidden md:block overflow-x-hidden">
+        <About1 />
+        <About2 />
+        <About3 />
+        <About4 />
+        <Footer />
+      </div>
+    </div>
+  );
 }

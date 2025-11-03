@@ -10,7 +10,7 @@ const About1: React.FC = () => {
       style={{ fontFamily: "DM Sans" }}
     >
       {/* Parent container */}
-      <section className="flex flex-col md:flex-row w-full md:w-[83%] gap-12 items-center md:ml-10">
+      <section className="flex flex-col md:flex-row w-full md:max-w-[1100px] gap-12 items-center md:ml-10">
         
         {/* LEFT SIDE: TEXT */}
         <div className="w-full md:w-[70%] text-center md:text-left">
