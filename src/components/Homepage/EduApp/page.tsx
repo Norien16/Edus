@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import img from "../../../../public/images/backlineImg.png"
 
 const keyframes = [
   "keyframe-entry",
@@ -72,14 +73,12 @@ const EduApp: React.FC = () => {
     <>
       <style>{`
         .carousel-container {
-          position: relative;
-          width: 100%;
-          height: clamp(200px, 30vw, 450px); /* scales with screen */
-          background: url("/images/backLineImg.png") no-repeat;
-          background-position: center;
-          background-size: contain;
-          overflow: hidden;
-        }
+  position: relative;
+  width: 100%;
+  height: clamp(200px, 30vw, 450px);
+ 
+  overflow: hidden;
+}
 
         .carousel-image {
           position: absolute;
@@ -180,7 +179,12 @@ const EduApp: React.FC = () => {
       </div>
 
       {/* Carousel */}
-      <div className="carousel-container mb-40">
+      <div   style={{
+    backgroundImage: `url(${img.src})`,
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+    backgroundSize: "contain",
+  }} className="carousel-container mb-40">
         {/* Overlay Image */}
         <Image
           src="/images/phoneImg.png"
