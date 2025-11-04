@@ -397,7 +397,7 @@ export default function OurServices() {
                       border: "none",
                       cursor: "pointer",
                       display: "flex",
-                      alignItems: "center",
+                      alignItems: "center", 
                       justifyContent: "center",
                       transition: "all 0.3s ease",
                       boxShadow:

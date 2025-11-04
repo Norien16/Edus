@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link"; // ✅ import Link
 import React, { useState } from "react";
+import img from "../../../../public/images/worldMapmimg.png"
 
 type Marker = {
   left: string;
@@ -156,7 +157,7 @@ const ExploreDestination: React.FC = () => {
       {/* Responsive Map Container */}
       <div className="relative w-full max-w-[1220px] mt-8">
         <Image
-          src="/images/worldMapimg.png"
+          src={img}
           alt="World Map"
           width={1220}
           height={560}
